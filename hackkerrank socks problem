@@ -1,6 +1,6 @@
 #!/bin/python
 #Locate socks
-#
+#https://www.hackerrank.com/challenges/bon-appetit
 #print "Locate socks"
 socks=[]
 size=input()
