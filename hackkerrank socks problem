@@ -1,0 +1,23 @@
+#!/bin/python
+#Locate socks
+#
+#print "Locate socks"
+socks=[]
+size=input()
+i=0
+count=0
+temp=raw_input()
+socks = [int(x) for x in temp.split()]
+#print socks
+for i in range (0,size):
+	for j in range (i+1,size):
+		if (socks[i]==-1):
+			i=i+1
+		else:
+			if(socks[i]==socks[j]):
+				count=count+1
+				#print "i = ",i,"j = ",j,"count = ",count
+				socks[i]=-1
+				socks[j]=-1
+				i=i+1
+print count
